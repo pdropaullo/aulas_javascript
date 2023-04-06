@@ -9,12 +9,20 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>JavaScript - Aula 01</title>
+    <script defer src="script.js"></script>
+    <title>JavaScript - Aula 02</title>
 </head>
 
 <body>
-
+    <main id="principal">
+        <button onclick="ligar_Desligar()" class="btn">Acender/Apagar</button>
+        <div class="soma">
+            <input type="number" class="n1">
+            <input type="number" class="n2">
+            <button onclick="Somar()">Somar</button>
+            <h2 id="resultado"></h2>
+        </div>
+    </main>
 </body>
 
 </html>
