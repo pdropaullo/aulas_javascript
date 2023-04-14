@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar {
+    height: 80px;
+    background-color: darkslateblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    /* position: fixed; */
+}
+
+.logo {
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    transition: .5s;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.nav-link:hover {
+    color: yellow;
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    height: 7px;
+    border-radius: 10px;
+    background-color: white;
+    width: 55px;
+    margin: 10px 0;
+    transition: .5s;
+}
+
+.slider {
+    width: 600px;
+    height: 500px;
+    margin: 5% auto;
+    overflow: hidden;
+}
+
+.container {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    transform: translateX(0);
+    transition: .5s;
+}
+
+.container>img {
+    min-width: 600px;
+    min-height: 500px;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.btn.inicio>.left {
+    visibility: hidden;
+}
+
+.btn>button {
+    opacity: .2;
+    width: 30px;
+    font-size: 32px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(to left, rgb(0, 0, 0, 0.200), rgb(0, 0, 0, 0.500));
+    transition: .3s;
+}
+
+/* .left {
+    opacity: .2;
+    width: 30px;
+    font-size: 32px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(to left, rgb(0, 0, 0, 0.200), rgb(0, 0, 0, 0.500));
+    transition: .3s;
+} */
+
+/* .right {
+    opacity: .2;
+    width: 30px;
+    font-size: 32px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(0, 0, 0, 0.200), rgb(0, 0, 0, 0.500));
+    transition: .3s;
+} */
+
+.btn>button:hover {
+    opacity: .8;
+}
+
+.content {
+    width: 600px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+.card.ativo>p {
+    background-color: red;
+}
+
+@media(max-width:768px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active-icon>.bar:nth-child(1) {
+        transform: translateY(17px) rotate(45deg);
+        transition: .5s;
+    }
+
+    .hamburguer.active-icon>.bar:nth-child(2) {
+        opacity: 0;
+        transition: .5s;
+    }
+
+    .hamburguer.active-icon>.bar:nth-child(3) {
+        transform: translateY(-17px) rotate(-45deg);
+        transition: .5s;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        position: fixed;
+        z-index: 999;
+        top: 80px;
+        background-color: rgb(43, 86, 226);
+        width: 100%;
+        text-align: center;
+        right: -100%;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .nav-item {
+        padding: 40px 0;
+    }
+
+}
