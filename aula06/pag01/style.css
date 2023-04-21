@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.menus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 40px;
+}
+
+.logo>a,
+.menus>a,
+.icons>a {
+    display: flex;
+    margin: 10px;
+    color: white;
+}
+
+#perfil {
+    border-radius: 50px;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+header>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.buscar{
+    color: white;
+}
+
+.pesquisa {
+    width: 500px;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 2px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    place-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.poster {
+    width: 100%;
+    height: 100%;
+}

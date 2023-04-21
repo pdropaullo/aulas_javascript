@@ -11,16 +11,11 @@
     background-color: red;
 }
 
-.itens{
-    height: 200vh;
-}
-
-.item{
-    display: flex;
+.card{
     background-color: white;
     width: 400px;
     height: 500px;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
 }
 
 .result{
